@@ -1,0 +1,15 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+    type: com.alibaba.druid.pool.DruidDataSource
+
