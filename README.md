@@ -13,4 +13,4 @@ A:由小程序前端获取用户位置经纬度，将经纬度信息传给后台
 （1）、解析经纬度所用的API接口：https://api.ahfi.cn/api/mapjx?lat=latitude&lng=longtitude;
 （2）、高德天气API接口：https://restapi.amap.com/v3/weather/weatherInfo?city=&key=1&extensions=base&output=JSON
 （3）、阿里天气API接口：https://jisutqybmf.market.alicloudapi.com
-图片：http://82.156.30.3:8082/pic/0.jpg
+小程序前端编译效果图片：http://82.156.30.3:8082/pic/0.jpg
