@@ -1,0 +1,189 @@
+/* pages/weather/helloweather.wxss */
+
+page{
+  background-color: #f2f2f2;
+}
+
+
+.mainweather{
+	
+  /* position: relative; */
+  background-color: #fff;
+  line-height:120rpx;
+}
+
+.location-text{
+     text-align: center;
+     font-size:40rpx;
+  }
+
+.temp {
+    text-align:center;
+    font-size:150rpx;
+    line-height:280rpx;
+    opacity:0.8;
+  }
+
+.weather {
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 120rpx;
+    opacity: 0.65;
+  }
+
+.air_label{
+    margin-left: 20rpx;
+    border-radius: 10rpx;
+    padding:8rpx;
+  }
+
+.day-weather {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    bottom:0;
+    left: 40rpx;
+    right: 40rpx;
+    height: 90rpx;
+    font-size: 40rpx;
+    line-height: 42rpx;
+    color: rgba(0, 0, 0, 0.5)
+  }
+  
+.temp-text {
+    flex-grow: 1;
+    padding-right: 40rpx;
+    text-align: right;
+  }
+
+.day_text {
+    flex-grow: 1;
+    padding-left: 40rpx;
+    text-align: left;
+  }
+
+  /* 接入项目 */
+ /* 5天 */
+.d2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 7rpx;
+  position: relative;
+  background-color: #fff;
+}
+.data_b_item{
+	width: calc(20% - 2rpx);
+	border-right: 1px solid #E8E8E8;
+	text-align: center;
+}
+.data_b_item_nb{
+	border: none;
+}
+.data_b_item>view{
+	width: 100%;
+}
+.d_block{
+	width: 100%;
+	height: 160rpx;
+	margin: 10rpx;
+}
+.d_week,.d_state{
+	color: 	#333333;
+	font-size: 26rpx;
+	line-height: 50rpx;
+}
+.d_day,.d_wind,.d_wind_level{
+	color: #999999;
+	font-size: 24rpx;
+	line-height: 40rpx;
+	height: 40rpx;
+}
+.weatherLine{
+	width: calc(100% - 20% + 56rpx);
+	height: 160rpx;
+	position: absolute;
+	bottom: 90rpx;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.weatherIcon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.windIcon{
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.block{
+  width: 100%;
+  height: 30rpx;
+}
+/* 24小时 */
+
+.title{
+  background-color: #fff;
+  width: 100%;
+	position: relative;
+	margin-top: 6rpx;
+  line-height:40rpx;
+  display: flex;
+}
+.title_sunrise,.title_sunset{
+    flex-grow: 1;
+    padding-right: 10rpx;
+    text-align: right;
+}
+
+.longtitle{
+  background-color: #fff;
+  width: 100%;
+	position: relative;
+	/* margin-top: 5rpx; */
+  line-height:60rpx;
+  
+}
+
+.dHours{
+	width: 100%;
+	position: relative;
+	margin-top: 6rpx;
+	display: inline-block;
+  white-space: nowrap;
+  background-color: #fff;
+}
+.dh_item{
+	width: 132rpx;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 16rpx;
+}
+.dh_block{
+	width: 132rpx;
+	height: 160rpx;
+}
+.dh_weather{
+	font-size: 24rpx;
+	color: #999;
+}
+.dh_time{
+	font-size: 26rpx;
+	color: #999;
+}
+.hourLine{
+	width: calc((7 * 132rpx) + 56rpx);
+	height: 160rpx;
+	position: absolute;
+	top: 0;
+	left: calc(66rpx - 28rpx);
+}
+
+.lifetitle{
+  background-color: #fff;
+  width: 100%;
+	position: relative;
+	margin-top: 7rpx;
+  line-height:60rpx;
+}

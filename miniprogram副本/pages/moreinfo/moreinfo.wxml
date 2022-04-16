@@ -1,0 +1,17 @@
+<!--pages/moreinfo/moreinfo.wxml-->
+
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src= "/images/0.png" ></image>
+    
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    
+  </view>
+  <view class="version">版本V1.0</view>
+</view>
+
+
+

@@ -1,0 +1,56 @@
+<!--pages/helloweather.wxml-->
+<view class="mainweather">
+  <view class="location-text">{{city}}</view>
+   <view class="temp">{{temperature}}°C</view>
+     <view class="weather" >
+       <text class="weather_text">天气：{{weather}}</text>
+       <text class="air_label">风向：{{winddirection}}</text>
+      </view>
+      <view class="day-weather">
+        <view class="day_text">湿度：{{humidity}}%</view>
+        <view class="temp-text">风力等级：{{windpower}}</view>
+      </view>
+</view>
+
+<!-- 引入项目 -->
+<view class="title">
+  <view>8小时预报</view>
+  <view class="title_sunrise">日升：{{sunrise}}</view>
+  <view class="title_sunset">日落：{{sunset}}</view>
+</view>
+<scroll-view class="dHours" scroll-x>
+  <view class="dh_item" wx:for="{{hourArrs}}" wx:key="index">
+    <view class="dh_block"></view>
+    <view class="dh_weather">{{item.weather}}</view>
+    <view class="dh_wind_f">
+      <image src="/images/weathericon/weathercn/{{item.img}}.png" class="windIcon"></image>
+    </view>
+    <view class="dh_wind dh_weather">{{item.wind}}</view>
+    <view class="dh_time">{{item.bjTime}}</view>
+  </view>
+  <view class="hourLine">
+    <ec-canvas id="mychart-day-line" canvas-id="myCanvasD" ec="{{ ecH }}"></ec-canvas>
+    {{item.temperature}}
+  </view>
+</scroll-view>
+<!-- <view class="block"></view> -->
+<view class="longtitle">5天预报<view class="sun"></view>
+</view>
+<view class="d2">
+  <view class="data_b_item" wx:for="{{dayArrs}}" wx:key="index" :class="i==dayArrs.length-1?'.data_b_item_nb':''">
+    <view class="d_week">{{item.week}}</view>
+    <view class="d_day">{{item.date}}</view>
+    <view class="d_icon">
+      <image src="/images/weathericon/weathercn/{{item.img}}.png" class="weatherIcon">{{item.img}}</image>
+    </view>
+    <view class="d_state">{{item.weather}}</view>
+    <view class="d_block"></view>
+    <view class="d_wind">
+      <image src="/images/f1.png" class="windIcon"></image>
+    </view>
+    <view class="d_wind_level">{{item.wind_scale?item.wind_scale:''}}</view>
+  </view>
+  <view class="weatherLine">
+		<ec-canvas id="mychart-day-line" canvas-id="myCanvasD" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>
